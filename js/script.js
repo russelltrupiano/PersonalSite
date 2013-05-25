@@ -20,7 +20,7 @@ $(document).ready(function() {
 
 	$(".colorBox").colorbox({
 		rel: 'viewer',
-		height: '80%'
+		height: "80%"
 	});
 
 	$(".header_contents").mouseover(function() {
