@@ -1,0 +1,189 @@
+@font-face {
+    font-family: 'FixWidth';
+    src: url('../font/secrcode.eot');
+    src: url('../font/secrcode.eot') format('embedded-opentype'),
+         url('../font/secrcode.woff') format('woff'),
+         url('../font/secrcode.ttf') format('truetype'),
+         url('../font/secrcode.svg#SecretCodeRegular') format('svg');
+}
+
+a {text-decoration: none; color: black;}
+body {background-image: url('../images/bg.jpg');}
+img {
+	border-radius: 2px; 
+	height: 100px; 
+	width: 100px;
+	box-shadow: 2px 4px 15px #888888;
+}
+p {font-family: FixWidth;}
+
+.selectedNav {
+	font-weight: bold;
+	text-decoration: underline;
+	color: #ff8300;
+}
+
+#wrapper {
+	background: white;
+	border: gray solid 1px;
+	border-radius: 5px;
+	margin: auto;
+	width: 1000px;
+}
+	
+	#header {
+		font-size: 2em;
+		text-align: center;
+		margin: auto;
+		height: 100px;
+		width: 50%;
+		margin-bottom: 10px;
+	}
+
+		/*Get rid of some header whitespace*/
+		#header p:first-child {margin-top: 15px;}
+		#header p:last-child {margin-bottom: 15px;}
+		#header p {margin: 0;}
+
+		.hidden {opacity: 0;}
+		.perm_hidden {opacity: 0;}
+
+	.divider {
+		clear: both;
+		background: black;
+		margin: auto;
+		margin-top: -5px;
+		height: 1px;
+		width: 900px;
+	}
+
+	#menu {
+		float: left;
+		height: 359px;
+		width: 200px;
+		margin-left: 50px;
+		border-bottom: 1px black solid;
+		border-right: 1px black solid;
+		border-top: 1px black solid;
+		margin-bottom: -1px;
+		margin-top: -1px;
+		border-bottom-right-radius: 8px;
+		border-top-right-radius: 8px;
+	}
+
+		/*Space out nav items*/
+		.nav_item:first-child {margin-top: 15px;}
+
+		.nav_item {
+			font-size: 1.7em;
+			font-family: FixWidth;
+			margin-bottom: 30px;
+			text-align: center;
+		}
+
+		.nav_item:hover, .nav_item a:hover {cursor: pointer; color: #ff8300;}
+
+	.divider_v {
+		display: inline-block;
+		width: 1px;
+		height: 410px;
+		background: black;
+	}
+
+	#content {
+		float: right;
+		margin-right: 65px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		width: 670px;
+		text-align: center;
+	}
+
+		/*Hide content by default as to not refresh page when switching tabs*/
+		.content_cat {display: none;}
+
+			.acc_title {
+				font-size: 1.1em;
+				background: -webkit-radial-gradient(top, #FFc973, #ff9500);
+				color: black;
+				border-radius: 0;
+				border: 1px black solid;
+				margin-top: -3px;
+				margin-bottom: -3px;
+			}
+
+			.acc_title:hover {
+				background: -webkit-radial-gradient(top, #33cccc, #248f8f);
+				cursor: pointer;
+			}
+
+				.section {clear: both; padding-top: 15px;}
+
+					.section img {float: left;}
+					.section .info_text {
+						text-align: left;
+						float: right;
+						font-size: .8em;
+						width: 420px;
+						margin-top: -1px;
+					}
+
+					.info_title {color: #ff8300; font-size: 1.45em;}
+
+			#music_cont, #photo_cont {font-size: .85em;}
+
+				#music_cont p, #photo_cont p {margin-top: 5px;}
+				#music_cont a:hover, #photo_cont a:hover {
+					text-decoration: underline;
+				}
+
+		#photo_cont td img {height: 175px; width: 200px;}
+
+	#footer {
+		clear: both;
+		height: 100px;
+		width: 900px;
+		margin: auto;
+		margin-top: 15px;
+		margin-bottom: 10px;
+	}
+
+		#footer_left {
+			padding-top: 15px;
+			width: 400px;
+			margin-left: 5px;
+			float: left;
+			vertical-align: middle;
+		}
+
+		#footer_left p {
+			color: #777777;
+			font-family: Monospace;
+			text-align: left;
+			vertical-align: middle;
+		}
+
+		#footer_right {margin-right: 5px; width: 250px; float: right;}
+
+			th {color: #777777; font-family: monospace; font-size: 1.2em;}
+
+			.type_comm {
+				color: #777777;
+				font-family: monospace;
+				text-align: left;
+				width: 200px;
+			}
+
+			.comm_link {font-family: monospace; text-align: right;}
+
+				.comm_link a {text-decoration: none; color: #777777;}
+				.comm_link a:hover {color: black; font-weight: bold;}
+
+/*IMAGE PROPERTIES*/
+#umich_logo {height: 125px; width: 150px; float: left;}
+#mhackers_logo , #panera_logo, #mjr_logo, #mtll_logo, #lcn_logo {
+	height: 150px; width: 150px; float: left;
+}
+#site_thumbnail {height: 125px; width: 200px; float: left;}
+#TBP_logo {height: 200px; width: 150px; float: left;}
+#cover_pic {height: 261px; width: 253px;}
