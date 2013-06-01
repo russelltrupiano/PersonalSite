@@ -23,6 +23,11 @@ p {font-family: FixWidth;}
 	color: #ff8300;
 }
 
+	
+.selectedTitle { background: -webkit-radial-gradient(top, #33cccc, #248f8f);}
+
+.notSelectedTitle { background: -webkit-radial-gradient(top, #FFc973, #ff9500);}
+
 #wrapper {
 	background: white;
 	border: gray solid 1px;
@@ -104,7 +109,7 @@ p {font-family: FixWidth;}
 
 			.acc_title {
 				font-size: 1.1em;
-				background: -webkit-radial-gradient(top, #FFc973, #ff9500);
+				/*background: -webkit-radial-gradient(top, #FFc973, #ff9500);*/
 				color: black;
 				border-radius: 0;
 				border: 1px black solid;
@@ -114,7 +119,7 @@ p {font-family: FixWidth;}
 
 			.acc_title:hover {
 				background: -webkit-radial-gradient(top, #33cccc, #248f8f);
-				cursor: pointer;
+				/*cursor: pointer;*/
 			}
 
 				.section {clear: both; padding-top: 15px;}

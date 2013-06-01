@@ -47,4 +47,17 @@ $(document).ready(function() {
 		}
 	});
 
+	$(".acc_title").click(function(event) {
+		if ($("#"+event.target.id).hasClass("selectedTitle")) {
+			$("#"+event.target.id).removeClass("selectedTitle");
+			$("#"+event.target.id).addClass("notSelectedTitle");
+		}
+		else {
+			$(".acc_title").removeClass("selectedTitle");
+			$(".acc_title").addClass("notSelectedTitle");
+			$("#"+event.target.id).removeClass("notSelectedTitle");
+			$("#"+event.target.id).addClass("selectedTitle");
+		}
+	});
+
 });
