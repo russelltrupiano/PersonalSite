@@ -24,6 +24,7 @@ $(document).ready(function() {
 			heightStyle: 'content',
 			icons: false
 		});
+		$(".acc_title").addClass("notSelectedTitle");
 	}
 
 	var curPage = $("#content_home");
@@ -33,7 +34,7 @@ $(document).ready(function() {
 
 	// $('#menu').effect("slide", 'slow');
 	resetAccordion();
-	curPage.fadeTo(1500, 1);
+	curPage.fadeTo(1200, 1);
 
 	$(".colorBox").colorbox({
 		rel: 'viewer',
@@ -43,9 +44,10 @@ $(document).ready(function() {
 	$(".header_contents").mouseover(function() {
 		if (!alteredHeader) {
 			// $(".hidden").show();
-			$(".hidden").animate({"opacity":"1"});
-			$(".comments a, .hidden").animate({"opacity":".7"}, 600);
+			$(".hidden").css({"opacity":"1"});
+			$(".comments a, .hidden").animate({"color":"#ff8300"}, 600);
 			// "color":"#ff8300", 
+			// , "opacity":".7"
 			$(".no_comments").animate({"font-size":"+=20%"}, 400);
 			alteredHeader = true;
 		}
@@ -55,6 +57,10 @@ $(document).ready(function() {
 		newPage = $("#content"+event.target.id);
 		if (curPage.attr("id") != newPage.attr("id")) {
 			// if (event.target.id != "_resume") {
+				if (event.target.id == "_resume") {
+					$("#res_frame").attr("src", "docs/russelltrupiano.pdf");
+					$("#res_frame").css({"display": "inline"});
+				}
 				curPage.hide();
 				curPage = newPage;
 				curPage.toggle('fade', 'easeInExpo', '1500');
@@ -78,5 +84,14 @@ $(document).ready(function() {
 			$("#"+event.target.id).addClass("selectedTitle");
 		}
 	});
+
+	// $("#photo_cont td img").mouseover(function() {
+	// 	var photo = $(this);
+	// 	photo.animate({"opacity": ".8"}, 400);
+	// 	photo.mouseout(function() {
+	// 		photo.animate({"opacity": "1"}, 200);
+	// 	});
+	// });
+
 
 });

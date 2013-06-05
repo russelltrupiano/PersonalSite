@@ -20,7 +20,7 @@ p {font-family: FixWidth;}
 .selectedNav {
 	/*font-weight: bold;*/
 	text-decoration: underline;
-	color: #ff8300;
+	/*color: #ff8300;*/
 }
 
 	
@@ -39,12 +39,15 @@ p {font-family: FixWidth;}
 	background: -moz-linear-gradient(top, #FFc973, #ff9500);
 	background: -ms-linear-gradient(top, #FFc973, #ff9500);
 	background: -o-linear-gradient(top, #FFc973, #ff9500);
+	color: black;
 /*font-weight: bold;*/}
 
 #wrapper {
 	background: white;
 	border: gray solid 1px;
 	border-radius: 2px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 	margin: auto;
 	width: 1100px;
 }
@@ -93,8 +96,8 @@ p {font-family: FixWidth;}
 		/*margin-bottom: -1px;
 		margin-top: -1px;*/
 		margin: 0 auto;
-		/*padding-top: 5px;
-		padding-bottom: 5px;*/
+		/*padding-top: 5px;*/
+		padding-bottom: 3px;
 		/*border-radius: 8px;*/
 		/*position: relative;*/
 		/*border-bottom-right-radius: 8px;*/
@@ -132,7 +135,7 @@ p {font-family: FixWidth;}
 		/*.nav_item:first-child {padding-left: 43px;}
 		.nav_item:last-child {padding-right: 43px;}*/
 
-		.nav_item:hover, .nav_item a:hover {cursor: pointer; color: #ff8300;}
+		.nav_item:hover, .nav_item a:hover {cursor: pointer; /*color: #ff8300;*/text-decoration: underline;}
 
 		.divider_v {
 			display: inline-block;
@@ -200,17 +203,30 @@ p {font-family: FixWidth;}
 					text-decoration: underline;
 				}
 
-			iframe#res_frame {width: 1000px;height: 600px;overflow: scroll;}
+			iframe#res_frame {width: 1000px;height: 600px;overflow: scroll;display: none;}
 
-		#photo_cont td img {height: 175px; width: 200px;}
+		#photo_cont td img {
+			height: 175px; 
+			width: 229px;
+			-webkit-transition: opacity .4s ease-in-out;
+			-moz-transition: opacity .4s ease-in-out;
+			-ms-transition: opacity .4s ease-in-out;
+			-o-transition: opacity .4s ease-in-out;
+		}
+		#photo_cont td img:hover {opacity: .7;}
 
 	#footer {
 		clear: both;
-		height: 100px;
-		width: 1000px;
+		height: 70px;
+		width: 1100px;
 		margin: auto;
 		margin-top: 15px;
-		margin-bottom: 10px;
+		/*margin-bottom: 10px;*/
+		background: -webkit-linear-gradient(top, #000089, black);
+		background: -moz-linear-gradient(top, #000089, black);
+		background: -wms-linear-gradient(top, #000089, black);
+		background: -o-linear-gradient(top, #000089, black);
+		color: white;
 	}
 
 		#footer_left {
@@ -222,7 +238,7 @@ p {font-family: FixWidth;}
 		}
 
 		#footer_left p {
-			color: #777777;
+			color: white;
 			font-family: Monospace;
 			text-align: left;
 			vertical-align: middle;
@@ -230,10 +246,10 @@ p {font-family: FixWidth;}
 
 		#footer_right {margin-right: 5px; width: 250px; float: right;}
 
-			#footer_right th {color: #777777; font-family: monospace; font-size: 1.2em;}
+			#footer_right th {color: white; font-family: monospace; font-size: 1.2em; font-weight: normal;}
 
 			.type_comm {
-				color: #777777;
+				/*color: #777777;*/
 				font-family: monospace;
 				text-align: left;
 				width: 200px;
@@ -241,8 +257,8 @@ p {font-family: FixWidth;}
 
 			.comm_link {font-family: monospace; text-align: right;}
 
-				.comm_link a {text-decoration: none; color: #777777;}
-				.comm_link a:hover {color: black; font-weight: bold;}
+				.comm_link a {text-decoration: none; color: white;}
+				.comm_link a:hover {/*color: black*/; font-weight: bold;}
 
 /*IMAGE PROPERTIES*/
 #umich_logo {height: 125px; width: 150px; float: left;}
