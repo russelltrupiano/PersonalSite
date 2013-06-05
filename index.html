@@ -38,21 +38,25 @@
 	<div id="wrapper">
 
 		<!-- <div class="divider"></div> -->
-		<div id="menu">
-			<div class="nav_item" id="_home">Home</div>
-			<!-- <div class="divider_v"></div> -->
-			<div class="nav_item" id="_education">Education</div>
-			<!-- <div class="divider_v"></div> -->
-			<div class="nav_item" id="_work">Employment</div>
-			<!-- <div class="divider_v"></div> -->
-			<div class="nav_item" id="_skills">Skills</div>
-			<!-- <div class="divider_v"></div> -->
-			<div class="nav_item" id="_projects">Projects</div>
-			<!-- <div class="divider_v"></div> -->
-			<div class="nav_item" id="_interests">Extras</div>
-			<!-- <div class="divider_v"></div> -->
-			<div class="nav_item" id="_resume">Resume(.pdf)</div>
-		</div>
+		<table id="menu" width="1100px">
+			<tbody>
+				<tr>
+					<td class="nav_item" id="_home">Home</td>
+					<!-- <div class="divider_v"></div> -->
+					<td class="nav_item" id="_education">Education</td>
+					<!-- <div class="divider_v"></div> -->
+					<td class="nav_item" id="_work">Employment</td>
+					<!-- <div class="divider_v"></div> -->
+					<td class="nav_item" id="_skills">Skills</td>
+					<!-- <div class="divider_v"></div> -->
+					<td class="nav_item" id="_projects">Projects</td>
+					<!-- <div class="divider_v"></div> -->
+					<td class="nav_item" id="_interests">Extras</td>
+					<!-- <div class="divider_v"></div> -->
+					<td class="nav_item" id="_resume">Resume(.pdf)</td>
+				</tr>
+			</tbody>
+		</table>
 		<!-- <div class="divider_v"></div> -->
 	<!-- <div id="wrapper"> -->
 		<div id="content">
@@ -178,18 +182,18 @@
 			</div>
 			<!-- PROJECTS -->
 			<div class="content_cat" id="content_projects">
-				<div>
+				<div class="section">
 					<a href="index.html"><img src="images/web_thumb.jpg" class="image" id="site_thumbnail" target="_new"/></a>
-					<div class="info">
-						<p>This website was my first HTML/CSS/JS/jQuery endeavor and I really enjoyed experimenting with these languages and frameworks to create something completely unique to me. It has spurred a strong interest in future web development.</p>
-					</div>
+					<p class="info_text">
+						This website was my first HTML/CSS/JS/jQuery endeavor and I really enjoyed experimenting with these languages and frameworks to create something completely unique to me. It has spurred a strong interest in future web development.
+					</p>
 				</div>
 			</div>
 			<div class="content_cat" id="content_interests">
 				<p class="acc_title notSelectedTitle" id="music">Music</p>
 				<div class="info_chunk" id="music_cont">
 					<p>I played guitar as a member of <a href="https://www.facebook.com/pages/Kill-the-Author/145648588804223?ref=br_tf" text-decoration="none" target="_new">Kill the Author</a>, a local band formed with a group of my friends and played at many venues ranging from concert halls to school gyms for fundraisers. We were together from 2010-2012.</p>
-					<div class="widget_iframe" style="display:inline-block;width:100%;height:320px;margin:0;padding:0;border:0;box-shadow: 4px 4px 15px #888888;"><iframe class="widget_iframe" src="https://www.reverbnation.com/widget_code/html_widget/artist_1182179?widget_id=50&pwc[design]=default&pwc[background_color]=%23333333&pwc[included_songs]=1&pwc[photo]=0%2C1&pwc[size]=fit" width="100%" height="100%" frameborder="0" scrolling="no"></iframe><div class="footer_branding" style="margin-top:-5px;font-size:10px;font-family:Arial;"></div></div>
+					<div class="widget_iframe" style="display:inline-block;width:900px;height:300px;margin:0;padding:0;border:0;box-shadow: 4px 4px 15px #888888;"><iframe class="widget_iframe" src="https://www.reverbnation.com/widget_code/html_widget/artist_1182179?widget_id=50&pwc[design]=default&pwc[background_color]=%23333333&pwc[included_songs]=1&pwc[photo]=0%2C1&pwc[size]=fit" width="100%" height="100%" frameborder="0" scrolling="no"></iframe><div class="footer_branding" style="margin-top:-5px;font-size:10px;font-family:Arial;"></div></div>
 				</div>
 
 				<p class="acc_title notSelectedTitle" id="photo">Photography</p>
@@ -251,6 +255,10 @@
 						</tr>
 					</table>
 				</div>
+			</div>
+			<!-- RESUME -->
+			<div class="content_cat" id="content_resume">
+				<iframe src="docs/russelltrupiano.pdf" scrolling="yes" id="res_frame"></iframe>
 			</div>
 		</div>
 		<div class="divider"></div>
