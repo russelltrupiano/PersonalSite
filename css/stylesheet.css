@@ -71,12 +71,15 @@ p {font-family: FixWidth;}
 		.perm_hidden {opacity: 0; /*display: none;*/}
 
 	.divider {
-		clear: both;
+		/*clear: both;*/
 		background: black;
 		margin: auto;
-		margin-top: -5px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		margin-left: 35px;
 		height: 1px;
-		width: 1000px;
+		padding-left: 90px;
+		width: 765px;
 	}
 
 	#menu {
@@ -198,6 +201,48 @@ p {font-family: FixWidth;}
 
 			#music_cont, #photo_cont {font-size: .85em;}
 
+			#skills_table {
+				font-family: FixWidth;
+				margin: auto;
+				text-align: center;
+				width: 1100px;
+				padding-left: 55px;
+				padding-right: 55px;
+				/*margin-left: 1000px;*/
+			}
+
+				/*.break {c}*/
+
+				.score_bar {
+					width: 200px;
+					height: 20px;
+					/*background: white;*/
+					border: 1px solid gray;
+					border-radius: 3px;
+					/*background-image: url('../images/rank_red.png');*/
+				}
+
+					.score_bar div {
+						height: 20px;
+						border-radius: 3px;
+					}
+
+					.green {background-image: url('../images/rank_green.png');}
+					.yellow {background-image: url('../images/rank_yellow.png');}
+					.red {background-image: url('../images/rank_red.png');}
+
+				#skills_table tbody {width: 990px;}
+				#skills_table td {width: 330px;}
+				.skill_cat {color: #ff8300; font-size: 1.45em;}
+				.skill {padding-right: 100px;}
+
+				/*.score_bar #cpp {
+					background-image: url('../images/rank_green.png');
+					width: 130px;
+					border-radius: 3px;
+					background: green;
+				}*/
+
 				#music_cont p, #photo_cont p {margin-top: 5px;}
 				#music_cont a:hover, #photo_cont a:hover {
 					text-decoration: underline;
@@ -268,3 +313,13 @@ p {font-family: FixWidth;}
 #site_thumbnail {height: 125px; width: 200px; float: left;}
 #TBP_logo {height: 200px; width: 150px; float: left;}
 #cover_pic {height: 261px; width: 253px;}
+#cpp {width: 140px;}
+#java {width: 50px;}
+#web {width: 110px;}
+#script{width: 30px;}
+#ps {width: 140px;}
+#fcp {width: 120px;}
+#os {width: 135px;}
+#leadership {width: 120px;}
+#creative {width: 110px;}
+#motive {width: 170px;}

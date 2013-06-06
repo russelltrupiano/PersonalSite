@@ -5,7 +5,7 @@ $(document).ready(function() {
 	var is_safari = navigator.userAgent.toLowerCase().indexOf('safari') > -1;
 
 	if (is_chrome || is_moz) {
-		$(".nav_item, .acc_title,.content p, .content_cat p").css({"font-weight": "bold"});
+		$(".nav_item, .acc_title,.content p, .content_cat p, #skills_table").css({"font-weight": "bold"});
 	}
 	if (is_moz) {
 		$(".nav_item").css({"padding-left": "32px", "padding-right": "32px"});
