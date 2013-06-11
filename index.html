@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Russell Trupiano</title>
+	<title>Russell Trupiano - Personal</title>
 	<link rel="shortcut icon" href="http://www.favicongenerator.com/favicon2/logo_no_words_or_bg-20130516-favicon.ico">
 	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
 	<link rel="stylesheet" type="text/css" href="css/colorbox.css">
@@ -29,10 +29,10 @@
 <body>
 	<div id="wrapper">
 		<div id="header">
-			<p class="header_contents no_comments"><a href="index.html">Russell Trupiano</a></p>
-			<p	class="header_contents comments"><a href="index.html">
+			<p class="header_contents no_comments"><a href="http://www.russelltrupiano.com">Russell Trupiano</a></p>
+			<p	class="header_contents comments"><a href="http://www.russelltrupiano.com">
 				<span class="hidden">// </span>&&<span class="perm_hidden"> //</span></a></p>
-			<p class="header_contents comments"><a href="index.html">
+			<p class="header_contents comments"><a href="http://www.russelltrupiano.com">
 				<span class="hidden">// </span>Computer Science Engineer<span class="perm_hidden"> //</span></a></p>
 		</div>
 	<!-- <div id="wrapper"> -->
@@ -191,7 +191,6 @@
 								<div class="green" id="cpp"></div>
 							</div></td>
 						</tr>
-						<tr><td colspan="3"><div class="divider"></div></td></tr>
 						<tr>
 							<td></td>
 							<td class="skill">Java/Android</td>
@@ -234,8 +233,15 @@
 						<tr>
 							<td class="skill_cat">Operating Systems</td>
 							<td class="skill">Unix/Linux/Mac OSX</td>
-							<td class="rank"><div class="score_bar"
-								><div class="green" id="os"></div>
+							<td class="rank"><div class="score_bar">
+								<div class="green" id="os"></div>
+							</div></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td class="skill">Windows</td>
+							<td class="rank"><div class="score_bar">
+								<div class="yellow" id="windows"></div>
 							</div></td>
 						</tr>
 						<tr><td colspan="3"><div class="divider"></div></td></tr>
@@ -268,6 +274,7 @@
 				<div class="section">
 					<a href="index.html"><img src="images/web_thumb.jpg" class="image" id="site_thumbnail" target="_new"/></a>
 					<p class="info_text">
+						<span class="info_title"><a href="http://www.russelltrupiano.com">russelltrupiano.com</a></span><br>
 						This website was my first HTML/CSS/JS/jQuery endeavor and I really enjoyed experimenting with these languages and frameworks to create something completely unique to me. It has spurred a strong interest in future web development.
 					</p>
 				</div>
@@ -275,14 +282,14 @@
 			<div class="content_cat" id="content_interests">
 				<p class="acc_title notSelectedTitle" id="music">Music</p>
 				<div class="info_chunk" id="music_cont">
-					<p>I played guitar as a member of <a href="https://www.facebook.com/pages/Kill-the-Author/145648588804223?ref=br_tf" text-decoration="none" target="_new">Kill the Author</a>, a local band formed with a group of my friends and played at many venues ranging from concert halls to school gyms for fundraisers. We were together from 2010-2012.</p>
+					<p class="info_text">I played guitar as a member of <a href="https://www.facebook.com/pages/Kill-the-Author/145648588804223?ref=br_tf" text-decoration="none" target="_new">Kill the Author</a>, a local post-hardcore band formed with a group of my friends and played at many venues ranging from concert halls to school gyms for fundraisers. We were together from 2010-2012. Give it a listen!</p>
 					<div class="widget_iframe" style="display:inline-block;width:900px;height:300px;margin:0;padding:0;border:0;box-shadow: 4px 4px 15px #888888;"><iframe class="widget_iframe" src="https://www.reverbnation.com/widget_code/html_widget/artist_1182179?widget_id=50&pwc[design]=default&pwc[background_color]=%23333333&pwc[included_songs]=1&pwc[photo]=0%2C1&pwc[size]=fit" width="100%" height="100%" frameborder="0" scrolling="no"></iframe><div class="footer_branding" style="margin-top:-5px;font-size:10px;font-family:Arial;"></div></div>
 				</div>
 
 				<p class="acc_title notSelectedTitle" id="photo">Photography</p>
 				<div class="info_chunk" id="photo_cont">
-					<p>For full size and higher resolution prints, feel free to<br>
-					 e-mail me at <a href="mailto:russtrup@umich.edu" id="email" target="_new">russtrup@umich.edu</a></p>
+					<p class="info_text">For full size and higher resolution prints, feel free to<br>
+					 e-mail me at <a href="mailto:russtrup@umich.edu" id="email" target="_new">russtrup@umich.edu</a>.</p>
 
 					<table width="100%">
 						<tr>
@@ -352,16 +359,36 @@
 			<div id="footer_right">
 				<table>
 					<thead>
-						<th colspan="2">CONTACT ME</th>
+						<!-- <th colspan="4"></th> -->
 					</thead>
 					<tbody>
 						<tr>
-							<td class="type_comm">E-Mail:</td>
-							<td class="comm_link"><a href="mailto:russtrup@umich.edu" class="comm_link" target="_blank">russtrup@umich.edu</a></td>
+							<td>
+								<a href="mailto:russtrup@umich.edu" target="_blank">
+									<img src="images/email.png" class="button">
+								</a>
+							</td>
+							<td>
+								<a href="https://www.facebook.com/russelltrupiano" target="_blank">
+									<img src="images/facebook.png" class="button">
+								</a>
+							</td>
+							<td>
+								<a href="http://www.linkedin.com/profile/view?id=226871389&trk=nav_responsive_tab_profile" target="_blank">
+									<img src="images/linkedin.png" class="button">
+								</a>
+							</td>
+							<!-- <td>
+								<a href="">
+									<img src="images/share.png" class="button">
+								</a>
+							</td> -->
+							<!-- <td class="type_comm">E-Mail:</td>
+							<td class="comm_link"><a href="mailto:russtrup@umich.edu" class="comm_link" target="_blank">russtrup@umich.edu</a></td> -->
 						</tr>
 						<tr>
-							<td class="type_comm">Facebook:</td>
-							<td class="comm_link"><a href="https://www.facebook.com/russelltrupiano" class="comm_link" target="_new">Russell Trupiano</a></td>
+							<!-- <td class="type_comm">Facebook:</td>
+							<td class="comm_link"><a href="https://www.facebook.com/russelltrupiano" class="comm_link" target="_new">Russell Trupiano</a></td> -->
 						</tr>
 					</tbody>
 				</table>

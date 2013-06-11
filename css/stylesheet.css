@@ -6,9 +6,21 @@
          url('../font/secrcode.ttf') format('truetype'),
          url('../font/secrcode.svg#SecretCodeRegular') format('svg');
 }
-html {font-smoothing: none;}
+/*html {font-smoothing: none;}*/
 a {text-decoration: none; color: black;}
-body {background-image: url('../images/bg.jpg');/*background: #a6a6a6;*/}
+html {background-image: url('../images/bg.jpg');height: 100%;/*background: black;*/}
+body {
+	/*background-image: url('../images/bodyback.png');*/
+	/*padding-bo: -10px;*/
+	margin-top: -10px;
+	/*background: black;*/
+	/*margin: auto;*/
+	/*width: 1200px;*/
+	height: 100%;
+	/*border: none;*/
+	/*border-top-left-radius: 10px;*/
+	/*border-top-right-radius: 10px;*/
+}
 img {
 	border-radius: 2px; 
 	height: 100px; 
@@ -44,10 +56,10 @@ p {font-family: FixWidth;}
 
 #wrapper {
 	background: white;
-	border: gray solid 1px;
-	border-radius: 2px;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
+	/*border: gray solid 1px;*/
+	border-radius: 3px;
+	/*border-top-left-radius: 10px;*/
+	/*border-top-right-radius: 10px;*/
 	margin: auto;
 	width: 1100px;
 }
@@ -57,8 +69,9 @@ p {font-family: FixWidth;}
 		font-size: 2em;
 		text-align: center;
 		margin: auto;
-		height: 100px;
+		height: 110px;
 		width: 1100px;
+		padding-top: 1px;
 		margin-bottom: 10px;
 	}
 
@@ -160,7 +173,7 @@ p {font-family: FixWidth;}
 		.content_cat {display: none;}
 
 			.acc_title {
-				font-size: 1.1em;
+				font-size: 14pt;
 				/*background: -webkit-radial-gradient(top, #FFc973, #ff9500);*/
 				/*color: black;*/
 				border-radius: 0;
@@ -194,12 +207,13 @@ p {font-family: FixWidth;}
 						/*vertical-align: center;*/
 					}
 					#content_projects .info_text {
-						margin-top: 30px;
+						margin-top: 20px;
 					}
 
-					.info_title {color: #ff8300; font-size: 1.45em;}
+					.info_title {color: #ff8300; font-size: 16pt;}
+					.info_title a {color: #ff8300; font-size: 18pt;}
 
-			#music_cont, #photo_cont {font-size: .85em;}
+			#music_cont, #photo_cont {font-size: 12pt;}
 
 			#skills_table {
 				font-family: FixWidth;
@@ -233,7 +247,7 @@ p {font-family: FixWidth;}
 
 				#skills_table tbody {width: 990px;}
 				#skills_table td {width: 330px;}
-				.skill_cat {color: #ff8300; font-size: 1.45em;}
+				.skill_cat {color: #ff8300; font-size: 18pt;}
 				.skill {padding-right: 100px;}
 
 				/*.score_bar #cpp {
@@ -276,6 +290,7 @@ p {font-family: FixWidth;}
 
 		#footer_left {
 			padding-top: 15px;
+			padding-left: 10px;
 			width: 400px;
 			margin-left: 5px;
 			float: left;
@@ -287,11 +302,27 @@ p {font-family: FixWidth;}
 			font-family: Monospace;
 			text-align: left;
 			vertical-align: middle;
+			opacity: .8;
 		}
 
-		#footer_right {margin-right: 5px; width: 250px; float: right;}
+			
+		#footer_right {padding-right: 10px; float: right; padding-top: 10px;}
 
-			#footer_right th {color: white; font-family: monospace; font-size: 1.2em; font-weight: normal;}
+			/*#footer_right th {color: white; font-family: monospace; font-size: 1.2em; font-weight: normal;}*/
+
+			.button {
+				box-shadow: 0 0 0;
+				height: 40px;
+				width: 40px;
+				opacity: .5;
+				-webkit-transition: opacity .3s ease-in-out;
+				-moz-transition: opacity .3s ease-in-out;
+				-ms-transition: opacity .3s ease-in-out;
+				-o-transition: opacity .3s ease-in-out;
+			}
+			.button:hover {
+				opacity: 1;
+			}
 
 			.type_comm {
 				/*color: #777777;*/
@@ -313,13 +344,14 @@ p {font-family: FixWidth;}
 #site_thumbnail {height: 125px; width: 200px; float: left;}
 #TBP_logo {height: 200px; width: 150px; float: left;}
 #cover_pic {height: 261px; width: 253px;}
-#cpp {width: 140px;}
+#cpp {width: 150px;}
 #java {width: 50px;}
 #web {width: 110px;}
-#script{width: 30px;}
-#ps {width: 140px;}
-#fcp {width: 120px;}
-#os {width: 135px;}
-#leadership {width: 120px;}
+#script{width: 50px;}
+#ps {width: 150px;}
+#fcp {width: 110px;}
+#os {width: 150px;}
+#windows {width: 110px;}
+#leadership {width: 110px;}
 #creative {width: 110px;}
-#motive {width: 170px;}
+#motive {width: 150px;}
