@@ -89,10 +89,10 @@ p {font-family: FixWidth;}
 		margin: auto;
 		margin-top: 5px;
 		margin-bottom: 5px;
-		margin-left: 35px;
+		margin-left: 5px;
 		height: 1px;
 		padding-left: 90px;
-		width: 765px;
+		width: 790px;
 	}
 
 	#menu {
@@ -219,7 +219,7 @@ p {font-family: FixWidth;}
 				font-family: FixWidth;
 				margin: auto;
 				text-align: center;
-				width: 1100px;
+				width: 1000px;
 				padding-left: 55px;
 				padding-right: 55px;
 				/*margin-left: 1000px;*/
@@ -232,13 +232,13 @@ p {font-family: FixWidth;}
 					height: 20px;
 					/*background: white;*/
 					border: 1px solid gray;
-					border-radius: 3px;
+					border-radius: 7px;
 					/*background-image: url('../images/rank_red.png');*/
 				}
 
 					.score_bar div {
 						height: 20px;
-						border-radius: 3px;
+						border-radius: 7px;
 					}
 
 					.green {background-image: url('../images/rank_green.png');}
@@ -247,8 +247,8 @@ p {font-family: FixWidth;}
 
 				#skills_table tbody {width: 990px;}
 				#skills_table td {width: 330px;}
-				.skill_cat {color: #ff8300; font-size: 18pt;}
-				.skill {padding-right: 100px;}
+				.skill_cat {color: #ff8300; font-size: 18pt;/*width: 500px;*/}
+				.skill {padding-right: 125px;padding-left: 75px;}
 
 				/*.score_bar #cpp {
 					background-image: url('../images/rank_green.png');
