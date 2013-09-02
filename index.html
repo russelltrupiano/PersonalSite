@@ -2,22 +2,13 @@
 <html>
 <head>
 	<title>Russell Trupiano</title>
+	<!-- CSS -->
 	<link rel="shortcut icon" href="http://www.favicongenerator.com/favicon2/logo_no_words_or_bg-20130516-favicon.ico">
 	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
 	<link rel="stylesheet" type="text/css" href="css/colorbox.css">
 
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-
-	<!--  -->
-	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
-	<link rel="stylesheet" href="css/jquery.fancybox-buttons.css" type="text/css" media="screen" />
-	<script type="text/javascript" src="js/jquery.fancybox-buttons.js"></script>
-	<script type="text/javascript" src="js/jquery.fancybox-media.js"></script>
-	<link rel="stylesheet" href="css/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
-	<script type="text/javascript" src="js/jquery.fancybox-thumbs.js"></script>
-	<!--  -->
-
+	<!-- JS -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 	<script type="text/javascript" src="jquery-ui-accordion.js"></script>
@@ -27,6 +18,8 @@
 	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
+
+
 	<div id="wrapper">
 		<div id="header">
 			<p class="header_contents no_comments"><a href="http://www.russelltrupiano.com">Russell Trupiano</a></p>
@@ -35,10 +28,7 @@
 			<p class="header_contents comments"><a href="http://www.russelltrupiano.com">
 				<span class="hidden">// </span>Computer Science Engineer<span class="perm_hidden"> //</span></a></p>
 		</div>
-	<!-- <div id="wrapper"> -->
-
-		<!-- <div class="divider"></div> -->
-		<table id="menu">
+		<div id="spacer"><table id="menu">
 			<tbody>
 				<tr>
 					<td class="nav_item" id="_home">Home</td>
@@ -56,9 +46,7 @@
 					<td class="nav_item" id="_resume">Resume(.pdf)</td>
 				</tr>
 			</tbody>
-		</table>
-		<!-- <div class="divider_v"></div> -->
-	<!-- <div id="wrapper"> -->
+		</table></div>
 		<div id="content">
 			<!-- HOME -->
 			<div class="content_cat" id="content_home">
@@ -78,6 +66,8 @@
 							EECS 381: Advanced and Object Oriented Programming<br>
 							&nbsp;&nbsp;&nbsp;Grade: In Progress<br>
 							EECS 388: Introduction to Computer Security<br>
+							&nbsp;&nbsp;&nbsp;Grade: In Progress<br>
+							TCHCLM 300: Technical Communication<br>
 							&nbsp;&nbsp;&nbsp;Grade: In Progress<br>
 							EECS 203: Discrete Mathematics<br>
 							&nbsp;&nbsp;&nbsp;Grade: A<br>
@@ -141,7 +131,7 @@
 					<div class="section">
 						<img src="images/panera.jpg" class="image" id="panera_logo"/>
 						<p class="info_text">
-							<span class="info_title">May 2012 - Present</span><br>
+							<span class="info_title">May 2012 - August 2013</span><br>
 							I prepared the highest quality salads, sandwiches, and specialty beverages for patrons, and also ensured
 							cleanliness and a safe work environment for patrons and fellow associates by following proper cleaning and
 							safety precautions. I also greeted and served patrons at the drive through with an optimistic attitude to
@@ -193,6 +183,14 @@
 						</tr>
 						<tr>
 							<td></td>
+							<td class="skill">C</td>
+							<td class="rank"><div class="score_bar">
+								<div class="yellow" id="c"></div>
+							</div></td>
+						</tr>
+						
+						<tr>
+							<td></td>
 							<td class="skill">Java/Android</td>
 							<td class="rank"><div class="score_bar">
 								<div class="red" id="java"></div>
@@ -209,7 +207,7 @@
 						<tr><td colspan="3"><div class="divider"></div></td></tr>
 						<tr>
 							<td class="skill_cat">Server Side</td>
-							<td class="skill">Python/PHP</td>
+							<td class="skill">Python/Ruby</td>
 							<td class="rank"><div class="score_bar">
 								<div class="red" id="script"></div>
 							</div></td>
@@ -247,16 +245,9 @@
 						<tr><td colspan="3"><div class="divider"></div></td></tr>
 						<tr>
 							<td class="skill_cat">Personal Skills</td>
-							<td class="skill">Leadership</td>
-							<td class="rank"><div class="score_bar"
-								><div class="yellow" id="leadership"></div>
-							</div></td>
-						</tr>
-						<tr>
-							<td></td>
 							<td class="skill">Creativity</td>
 							<td class="rank"><div class="score_bar"
-								><div class="yellow" id="creative"></div>
+								><div class="green" id="creative"></div>
 							</div></td>
 						</tr>
 						<tr>
@@ -266,12 +257,19 @@
 								><div class="green" id="motive"></div>
 							</div></td>
 						</tr>
+						<tr>
+							<td></td>
+							<td class="skill">Leadership</td>
+							<td class="rank"><div class="score_bar"
+								><div class="yellow" id="leadership"></div>
+							</div></td>
+						</tr>
 					</tbody>
 				</table>
 			</div>
 			<!-- PROJECTS -->
 			<div class="content_cat" id="content_projects">
-				<div class="section">
+				<div class="project_item">
 					<a href="index.html"><img src="images/web_thumb.jpg" class="image" id="site_thumbnail" target="_new"/></a>
 					<p class="info_text">
 						<span class="info_title"><a href="http://www.russelltrupiano.com">russelltrupiano.com</a></span><br>
@@ -282,89 +280,176 @@
 			<div class="content_cat" id="content_interests">
 				<p class="acc_title notSelectedTitle" id="music">Music</p>
 				<div class="info_chunk" id="music_cont">
-					<p class="info_text">I played guitar as a member of <a href="https://www.facebook.com/pages/Kill-the-Author/145648588804223?ref=br_tf" text-decoration="none" target="_new">Kill the Author</a>, a local post-hardcore band formed with a group of my friends and played at many venues ranging from concert halls to school gyms for fundraisers. We were together from 2010-2012. Give it a listen!</p>
+					<p class="info_text_desc">I played guitar as a member of <a href="https://www.facebook.com/pages/Kill-the-Author/145648588804223?ref=br_tf" text-decoration="none" target="_new">Kill the Author</a>, a local post-hardcore band formed with a group of my friends and played at many venues ranging from concert halls to school gyms for fundraisers. We were together from 2010-2012. Give it a listen!</p>
 					<div class="widget_iframe" style="display:inline-block;width:900px;height:300px;margin:0;padding:0;border:0;box-shadow: 4px 4px 15px #888888;"><iframe class="widget_iframe" src="https://www.reverbnation.com/widget_code/html_widget/artist_1182179?widget_id=50&pwc[design]=default&pwc[background_color]=%23333333&pwc[included_songs]=1&pwc[photo]=0%2C1&pwc[size]=fit" width="100%" height="100%" frameborder="0" scrolling="no"></iframe><div class="footer_branding" style="margin-top:-5px;font-size:10px;font-family:Arial;"></div></div>
 				</div>
 
 				<p class="acc_title notSelectedTitle" id="photo">Photography</p>
 				<div class="info_chunk" id="photo_cont">
-					<p class="info_text">For full size and higher resolution prints, feel free to<br>
-					 e-mail me at <a href="mailto:russtrup@umich.edu" id="email" target="_new">russtrup@umich.edu</a>.</p>
-
-					<table width="100%">
+					<p class="info_text_desc">For full size and higher resolution prints, feel free to e-mail me at <a href="mailto:russell@russelltrupiano.com" id="email" target="_new">russell@russelltrupiano.com</a>.
+					</p>
+					<!-- Full size are 1600 thumbnails are 500-->
+					<table width="100%" id="big_grid">
 						<tr>
-							<td>
-								<a href="images/buckinghamWM-1.jpg" class="colorBox" rel="group" id="buckingham">
-									<img src="images/buckinghamWM-1.jpg" class="colorBoximg">
+							<td class="accented">
+								<a href="http://farm6.staticflickr.com/5499/9338660232_2c9f7900ae_h.jpg" class="colorBox" rel="group" id="buckingham">
+									<img src="http://farm6.staticflickr.com/5499/9338660232_c34b3707ee.jpg" class="colorBoximg">
 								</a>
 							</td>
 							<td>
-								<a href="images/florenceWM-1.jpg" class="colorBox" rel="group" id="florence">
-									<img src="images/florenceWM-1.jpg" class="colorBoximg">
-								</a>
-							</td>
-							<td>
-								<a href="images/spanishstepsWM-1.jpg" class="colorBox" rel="group" id="spanishsteps">
-									<img src="images/spanishstepsWM-1.jpg" class="colorBoximg">
-								</a>
-							</td>
-							<td>
-								<a href="images/vaticanWM-1.jpg" class="colorBox" rel="group" id="vatican">
-									<img src="images/vaticanWMthumb-1.jpg" class="colorBoximg">
-								</a>
+								<table width="50%" class="mini_grid">
+									<tr>
+										<td>
+											<a href="http://farm8.staticflickr.com/7427/9338658148_1885efbcc9_h.jpg" class="colorBox" rel="group" id="eiffel">
+												<img src="http://farm8.staticflickr.com/7427/9338658148_5b293b68b0_n.jpg" class="colorBoximg">
+											</a>
+										</td>
+										<td>
+											<a href="http://farm8.staticflickr.com/7442/9335860269_4dd3ec0b4e_h.jpg" class="colorBox" rel="group" id="spanishsteps">
+												<img src="http://farm8.staticflickr.com/7442/9335860269_0ee2c7c582_n.jpg" class="colorBoximg">
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://farm6.staticflickr.com/5342/9335869787_5143d8ea48_h.jpg" class="colorBox" rel="group" id="florence">
+												<img src="http://farm6.staticflickr.com/5342/9335869787_500bb82951.jpg" class="colorBoximg">
+											</a>
+										</td>
+										<td>
+											<a href="http://farm3.staticflickr.com/2821/9335858579_c1159c3c8d_h.jpg" class="colorBox" rel="group" id="vatican">
+												<img src="images/vaticanWMthumb-1.jpg" class="colorBoximg">
+											</a>
+										</td>
+									</tr>
+								</table>
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<a href="images/eiffelWM-1.jpg" class="colorBox" rel="group" id="eiffel">
-									<img src="images/eiffelWM-1.jpg" class="colorBoximg">
-								</a>
+								<table width="50%" class="mini_grid">
+									<tr>
+										<td>
+											<a href="http://farm8.staticflickr.com/7401/9338655822_cc837ee6f3_h.jpg" class="colorBox" rel="group" id="fountain">
+												<img src="http://farm8.staticflickr.com/7401/9338655822_a49d97aa48_n.jpg" class="colorBoximg">
+											</a>
+										</td>
+										<td>
+											<a href="http://farm6.staticflickr.com/5489/9338646628_6a8cb3fc69_h.jpg" class="colorBox" rel="group" id="tcm">
+												<img src="http://farm6.staticflickr.com/5489/9338646628_21d30681fe_n.jpg" class="colorBoximg">
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://farm4.staticflickr.com/3813/9338660722_e6713ec561_h.jpg" class="colorBox" rel="group" id="pond">
+												<img src="http://farm4.staticflickr.com/3813/9338660722_00766eea95_n.jpg" class="colorBoximg">
+											</a>
+										</td>
+										<td>
+											<a href="http://farm4.staticflickr.com/3809/9335871401_460e355c60_h.jpg" class="colorBox" rel="group" id="dragonfly">
+												<img src="http://farm4.staticflickr.com/3809/9335871401_0e3de03e7f_m.jpg" class="colorBoximg">
+											</a>
+										</td>
+									</tr>
+								</table>
 							</td>
-							<td>
-								<a href="images/tcmWM-1.jpg" class="colorBox" rel="group" id="tcm">
-									<img src="images/tcmWM-1.jpg" class="colorBoximg">
-								</a>
-							</td>
-							<td>
-								<a href="images/pondWM-1.jpg" class="colorBox" rel="group" id="pond">
-									<img src="images/pondWM-1.jpg" class="colorBoximg">
-								</a>
-							</td>
-							<td>
-								<a href="images/dragonflyWM-1.jpg" class="colorBox" rel="group" id="dragonfly">
-									<img src="images/dragonflyWM-1.jpg" class="colorBoximg">
+							<td class="accented">
+								<a href="http://farm4.staticflickr.com/3777/9338650224_218daf78f8_h.jpg" class="colorBox" rel="group" id="milkyway">
+									<img src="http://farm4.staticflickr.com/3777/9338650224_2668253f8d.jpg" class="colorBoximg">
 								</a>
 							</td>
 						</tr>
 						<tr>
-							<td>
-								<a href="images/alligatorWM.jpg" class="colorBox" rel="group" id="alligator">
-									<img src="images/alligatorWM.jpg" class="colorBoximg">
+							<td class="accented">
+								<a href="http://farm8.staticflickr.com/7357/9335876097_f5ecaeb844_h.jpg" class="colorBox" rel="group" id="birthday">
+									<img src="http://farm8.staticflickr.com/7357/9335876097_9793949912.jpg" class="colorBoximg">
 								</a>
 							</td>
+							<td>
+								<table width="50%" class="mini_grid">
+									<tr>
+										<td>
+											<a href="http://farm6.staticflickr.com/5520/9338654954_55335cca8b_h.jpg" class="colorBox" rel="group" id="restarea">
+												<img src="http://farm6.staticflickr.com/5520/9338654954_a9bf5e4731_n.jpg" class="colorBoximg">
+											</a>
+										</td>
+										<td>
+											<a href="http://farm4.staticflickr.com/3676/9338661876_271cd5d589_h.jpg" class="colorBox" rel="group" id="bean">
+												<img src="http://farm4.staticflickr.com/3676/9338661876_9bc4b4d71f_n.jpg" class="colorBoximg">
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://farm8.staticflickr.com/7394/9335863461_7307ddbf08_h.jpg" class="colorBox" rel="group" id="lizard">
+												<img src="http://farm8.staticflickr.com/7394/9335863461_5f56293615_n.jpg" class="colorBoximg">
+											</a>
+										</td>
+										<td>
+											<a href="http://farm8.staticflickr.com/7436/9335860957_40d61428c1_h.jpg" class="colorBox" rel="group" id="docks">
+												<img src="http://farm8.staticflickr.com/7436/9335860957_40d61428c1_h.jpg" class="colorBoximg">
+											</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<table width="50%" class="mini_grid">
+									<tr>
+										<td>
+											<a href="http://farm8.staticflickr.com/7310/9335866193_b5c4e6cf3b_h.jpg" class="colorBox" rel="group" id="">
+												<img src="http://farm8.staticflickr.com/7310/9335866193_3b39c17b00_n.jpg" class="colorBoximg">
+											</a>
+										</td>
+										<td>
+											<a href="http://farm6.staticflickr.com/5520/9496959990_ce5acf6c82_h.jpg" class="colorBox" rel="group" id="">
+												<img src="http://farm6.staticflickr.com/5520/9496959990_d5029748af.jpg" class="colorBoximg">
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://farm6.staticflickr.com/5510/9496804712_e4f2fe7eab_h.jpg" class="colorBox" rel="group" id="">
+												<img src="http://farm6.staticflickr.com/5510/9496804712_b3e1eb30f3.jpg" class="colorBoximg">
+											</a>
+										</td>
+										<td>
+											<a href="http://farm4.staticflickr.com/3830/9338651894_9eee59cb04_h.jpg" class="colorBox" rel="group" id="">
+												<img src="http://farm4.staticflickr.com/3830/9338651894_b3baf5e185_n.jpg" class="colorBoximg">
+											</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="accented">
+								<a href="http://farm6.staticflickr.com/5505/9335866719_035cf737a0_h.jpg" class="colorBox" rel="group" id="rockfaceBW">
+									<img src="http://farm6.staticflickr.com/5505/9335866719_8550dc83fb.jpg" class="colorBoximg">
+								</a>
+							</td>
+							
 						</tr>
 					</table>
+						
 				</div>
 			</div>
-			<!-- RESUME -->
+			<!-- RESUMÉ -->
 			<div class="content_cat" id="content_resume">
 				<iframe scrolling="yes" id="res_frame"></iframe>
 			</div>
 		</div>
-		<!-- <div class="divider"></div> -->
 		<div id="footer">
 			<div id="footer_left">
 				<p>&copy Russell Trupiano. All Rights Reserved.</p>
 			</div>
 			<div id="footer_right">
 				<table>
-					<thead>
-						<!-- <th colspan="4"></th> -->
-					</thead>
 					<tbody>
 						<tr>
 							<td>
-								<a href="mailto:russtrup@umich.edu" target="_blank">
+								<a href="mailto:russell@russelltrupiano.com" target="_blank">
 									<img src="images/email.png" class="button">
 								</a>
 							</td>
@@ -378,17 +463,6 @@
 									<img src="images/linkedin.png" class="button">
 								</a>
 							</td>
-							<!-- <td>
-								<a href="">
-									<img src="images/share.png" class="button">
-								</a>
-							</td> -->
-							<!-- <td class="type_comm">E-Mail:</td>
-							<td class="comm_link"><a href="mailto:russtrup@umich.edu" class="comm_link" target="_blank">russtrup@umich.edu</a></td> -->
-						</tr>
-						<tr>
-							<!-- <td class="type_comm">Facebook:</td>
-							<td class="comm_link"><a href="https://www.facebook.com/russelltrupiano" class="comm_link" target="_new">Russell Trupiano</a></td> -->
 						</tr>
 					</tbody>
 				</table>
